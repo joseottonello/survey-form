@@ -1,0 +1,260 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+    --instagram: #c5125d;
+    --linkedin: #2461bd;
+    --github: #9b31a5;
+    --shadow: rgb(27, 26, 26);
+  }
+
+body{
+  font-size: 15px;
+  font-family: arial;
+  text-align: center;
+  background-image: 
+  url("https://p4.wallpaperbetter.com/wallpaper/964/462/462/office-tools-cooperation-group-work-wallpaper-preview.jpg");
+  color: var(--color-white); 
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--color-darkblue-alpha);
+  height: auto;
+  border-radius: 5rem;
+}
+
+.wrapper .tooltip {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  padding: 5px 5px;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 3px 3px 3px 3px var(--shadow);
+  transition: all 1s cubic-bezier(0.68 , -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  bottom: -3px;
+  left: 50%;
+  pointer-events: none;
+  transform: translate(-50) rotate (45deg);
+  transition: all 1s cubic-bezier(0.68 , -0.55, 0.265, 1.55);
+}
+
+.wrapper .instagram {
+  font-size: 30px;
+  align-items: center;
+  color: black;
+  background-color:white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 15px;
+  margin: 25px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 5px 5px 5px 5px var(--shadow);
+  transition: all 1s cubic-bezier(0.68 , -0.55, 0.265, 1.55);
+}
+
+.wrapper .github {
+  font-size: 30px;
+  align-items: center;
+  color: black;
+  background-color:white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 15px;
+  margin: 25px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 5px 5px 5px 5px var(--shadow);
+  transition: all 1s cubic-bezier(0.68 , -0.55, 0.265, 1.55);
+}
+.wrapper .linkedin {
+  font-size: 30px;
+  align-items: center;
+  color: black;
+  background-color:white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 15px;
+  margin: 25px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 5px 5px 5px 5px var(--shadow);
+  transition: all 1s cubic-bezier(0.68 , -0.55, 0.265, 1.55);
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: var(--instagram);
+  color: white;
+  cursor: pointer;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: var(--github);
+  color: white;
+  cursor: pointer;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: var(--linkedin);
+  color: white;
+  cursor: pointer;
+}
+
+.wrapper .instagram:hover .tooltip {
+  top: -30px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .github:hover .tooltip {
+  top: -30px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .linkedin:hover .tooltip {
+  top: -30px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .instagram:hover span 
+.wrapper .instagram:hover .tooltip {
+  text-shadow: 0px -1px 0px black;
+}
+
+.wrapper .github:hover span 
+.wrapper .github:hover .tooltip {
+  text-shadow: 0px -1px 0px black;
+}
+
+.wrapper .linkedin:hover span 
+.wrapper .linkedin:hover .tooltip {
+  text-shadow: 0px -1px 0px black;
+}
+
+#survey-form {
+  background-color: var(--color-darkblue-alpha);
+}
+
+#header {
+  font-size: 20px;
+  font-family: arial;
+  text-align: center;
+}
+
+#survey-inside {
+  background-color: var(--color-darkblue);
+  border-radius: 5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form {  
+  border-radius: 5rem; 
+  margin: 5rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.form-group {
+  margin: 1.25rem auto 1.25rem auto; 
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.form-control {
+  font-family: arial;
+  display: block;
+  width: 500px;
+  padding: 1rem;
+  background: white;
+  color: gray;
+  border-radius: 1rem;
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.select-control {
+  font-family: arial;
+  display: block;
+  width: 530px;
+  padding: 1rem;
+  background: white;
+  color: gray;
+  border-radius: 1rem;
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.input-textarea {
+  font-family: Arial, sans-serif;
+  width: 530px;
+  height: 150px;
+  resize: vertical; 
+  border: 2px solid #ced4da;
+  border-radius: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+@media (min-width: 500px) {
+form {
+  padding: 5rem;
+}
+}
+
+.submit-button {
+  font-family: arial;
+  display: block;
+  width: 150px;
+  padding: 1rem;
+  background: var(--color-green);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+
+}
